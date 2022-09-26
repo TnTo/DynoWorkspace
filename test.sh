@@ -7,8 +7,8 @@ fi
 for p in $ps
 do
     cd $p
-    conan create -pr ../dyno .
+    conan create -pr ../dyno -o $p:test=True . 
     mkdir -p coverage
-    gcovr -r build/* --html-details -o coverage/index.html
+    gcovr test_package/build/*/ ~/.conan/data/$p/*/_/_/build/*/build -r src/ --html-details -o coverage/index.html -s
     cd ..
 done
