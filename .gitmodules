@@ -1,0 +1,6 @@
+[submodule "Dyno"]
+	path = Dyno
+	url = https://github.com/TnTo/Dyno
+[submodule "DAS"]
+	path = DAS
+	url = https://github.com/TnTo/DAS
