@@ -7,15 +7,6 @@ fi
 for p in $ps
 do
     cd $p
-    case $p in
-    Dyno)
-        conan create -u -tf None -pr ../dyno . 
-        ;;
-    DAS)
-        conan install -pr ../dyno .
-        conan build . 
-        ;;
-    esac
-    
+    conan create -u -tf None -pr ../dyno .  
     cd ..
 done
