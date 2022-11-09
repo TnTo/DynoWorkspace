@@ -4,3 +4,6 @@
 [submodule "DAS"]
 	path = DAS
 	url = https://github.com/TnTo/DAS
+[submodule "DAS_Notes"]
+	path = DAS_Notes
+	url = https://github.com/TnTo/DAS-Notes
