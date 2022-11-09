@@ -6,7 +6,14 @@ else
 fi
 for p in $ps
 do
-    cd $p 
-    conan create -pr ../dyno .
+    cd $p
+    case $p in
+    Dyno)
+        conan create -pr ../dyno . 
+        ;;
+    DAS)
+        : 
+        ;;
+    esac
     cd ..
 done
