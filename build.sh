@@ -7,7 +7,6 @@ fi
 for p in $ps
 do
     cd $p
-    conan install -pr ../dyno . 
-    conan build . 
+    conan create -u -tf None -pr ../dyno .  
     cd ..
 done
