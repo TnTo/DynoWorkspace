@@ -9,7 +9,7 @@ do
     cd $p
     case $p in
     Dyno)
-        conan create -pr ../dyno . 
+        conan create -u -pr ../dyno . 
         ;;
     DAS)
         : 
