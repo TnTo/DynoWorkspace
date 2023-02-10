@@ -6,7 +6,6 @@ do
     cd ..
 done
 rm */{conaninfo.txt,conanbuildinfo.txt,conan.lock,graph_info.json}
-rm *{,/test_package}/{SConscript_conan,CMakeUserPresets.json}
-rm */{src,test_package}/.sconsign.dblite
+rm *{,/test_package}/{CMakeUserPresets.json}
 rm -R *{,/test_package}/build
 rm -R */coverage
